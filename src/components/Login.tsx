@@ -21,32 +21,32 @@ const Login = (props:loginProp) => {
   const [user,setUser] = useState<any>(null)
   const [otp,setOtp] = useState("")
 
-  const sendOtp = async() =>{
-    try{
-      const recaptcha = new RecaptchaVerifier(auth,"recaptcha",{})
-      const confirmation = await signInWithPhoneNumber(auth,phone,recaptcha)
-      setUser(confirmation)
-    }catch(err){
-      console.error(err)
-      const error:any = err
-      toast.error(error)
-    }
-  }
+  // const sendOtp = async() =>{
+  //   try{
+  //     const recaptcha = new RecaptchaVerifier(auth,"recaptcha",{})
+  //     const confirmation = await signInWithPhoneNumber(auth,phone,recaptcha)
+  //     setUser(confirmation)
+  //   }catch(err){
+  //     console.error(err)
+  //     const error:any = err
+  //     toast.error(error)
+  //   }
+  // }
 
-  const verifyOtp = async() =>{
-    try{
-     const data = await user.confirm(otp)
-     data.user.phoneNumber && toast.success("LoggedIn successfully")
-     data.user.phoneNumber && 
-     setTimeout(()=>{
-      navigate("/main")
-     },2000)
-    }catch(err){
-      console.error(err)
-      const error:any = err
-      toast.error(error)
-    }
-  }
+  // const verifyOtp = async() =>{
+  //   try{
+  //    const data = await user.confirm(otp)
+  //    data.user.phoneNumber && toast.success("LoggedIn successfully")
+  //    data.user.phoneNumber && 
+  //    setTimeout(()=>{
+  //     navigate("/main")
+  //    },2000)
+  //   }catch(err){
+  //     console.error(err)
+  //     const error:any = err
+  //     toast.error(error)
+  //   }
+  // }
 
 
   return (
@@ -73,9 +73,9 @@ const Login = (props:loginProp) => {
         value={phone}
         onChange={(phone)=>setPhone("+" + phone)}/>
         <div id='recaptcha' className='mt-3'></div>
-        <button onClick={sendOtp} className='bg-orange-500 p-5 text-white font-semibold text-xs w-80 mt-2'>Send Otp</button>
+        {/* <button onClick={sendOtp} className='bg-orange-500 p-5 text-white font-semibold text-xs w-80 mt-2'>Send Otp</button> */}
         {user && <input onChange={(e)=>setOtp(e.target.value)} className='p-5 border border-gray-300  w-80 mt-2' placeholder='One time password'/>}
-        {otp && <button onClick={verifyOtp} className='bg-orange-500 p-5 text-white font-semibold text-xs w-80 mt-2'>Verify Otp</button>}
+        {/* {otp && <button onClick={verifyOtp} className='bg-orange-500 p-5 text-white font-semibold text-xs w-80 mt-2'>Verify Otp</button>} */}
         <h1 className='text-xs font-medium mt-2'>By clicking on Login, I accept the Terms & Conditions & <br/>Privacy Policy</h1>
       </div>
     </div>

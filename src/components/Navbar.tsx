@@ -4,12 +4,12 @@ import logo from "../images/logo.png"
 import lens from "../images/lens.png"
 import profile from "../images/profile.png"
 import arrow from "../images/arrow.png"
-import cart from "../images/cart.png"
+// import cart from "../images/cart.png"
 import Login from './Login'
 import { Link, useNavigate } from 'react-router-dom'
 import out from "../images/logout.png"
-import { signOut } from 'firebase/auth'
-import { auth } from '../firebase/setup'
+// import { signOut } from 'firebase/auth'
+// import { auth } from '../firebase/setup'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -23,20 +23,20 @@ const Navbar = (props:restaurantProp) => {
   const navigate = useNavigate()
   const [loginModal,setLoginModal] = useState(false)
 
-  const logout = async() =>{
-    try{
-      await signOut(auth)
-      auth?.currentUser == null && toast.success("LoggedOut successfully")
-      auth?.currentUser == null &&
-      setTimeout(()=>{
-       navigate("/main")
-      },2000)
-    }catch(err){
-      console.error(err)
-      const error:any = err
-      toast.error(error)
-    }
-  }
+  // const logout = async() =>{
+  //   try{
+  //     await signOut(auth)
+  //     auth?.currentUser == null && toast.success("LoggedOut successfully")
+  //     auth?.currentUser == null &&
+  //     setTimeout(()=>{
+  //      navigate("/main")
+  //     },2000)
+  //   }catch(err){
+  //     console.error(err)
+  //     const error:any = err
+  //     toast.error(error)
+  //   }
+  // }
 
   return (
     <>
@@ -57,10 +57,10 @@ const Navbar = (props:restaurantProp) => {
       <img src={profile} className='w-7 h-7 ml-16'/>
       <div className='flex items-center cursor-pointer' onClick={()=> setLoginModal(true)}>
       <h1 className='ml-3'>Sign In</h1>
-      <div onClick={logout} className='flex items-center cursor-pointer'>
+      {/* <div onClick={logout} className='flex items-center cursor-pointer'>
       <img src={out} className='w-5 h-5 ml-16'/>
       <h1 className='ml-3'>Logout</h1>
-      </div>
+      </div> */}
       </div>
       </div>
       {loginModal && <Login setLoginModal={setLoginModal}/>}

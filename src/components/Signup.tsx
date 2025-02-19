@@ -18,32 +18,32 @@ const Signup = (props: signupProp) => {
 
   const navigate = useNavigate();
 
-  const sendOtp = async () => {
-    try {
-      const recaptcha = new RecaptchaVerifier(auth, "recaptcha", {});
-      const confirmation = await signInWithPhoneNumber(auth, phone, recaptcha);
-      setUser(confirmation);
-    } catch (err) {
-      console.error(err);
-      const error: any = err;
-      toast.error(error);
-    }
-  };
+  // const sendOtp = async () => {
+  //   try {
+  //     const recaptcha = new RecaptchaVerifier(auth, "recaptcha", {});
+  //     const confirmation = await signInWithPhoneNumber(auth, phone, recaptcha);
+  //     setUser(confirmation);
+  //   } catch (err) {
+  //     console.error(err);
+  //     const error: any = err;
+  //     toast.error(error);
+  //   }
+  // };
 
-  const verifyOtp = async () => {
-    try {
-      const data = await user.confirm(otp);
-      data.user.phoneNumber && toast.success("LoggedIn successfully");
-      data.user.phoneNumber &&
-        setTimeout(() => {
-          navigate("/main");
-        }, 2000);
-    } catch (err) {
-      console.error(err);
-      const error: any = err;
-      toast.error(error);
-    }
-  };
+  // const verifyOtp = async () => {
+  //   try {
+  //     const data = await user.confirm(otp);
+  //     data.user.phoneNumber && toast.success("LoggedIn successfully");
+  //     data.user.phoneNumber &&
+  //       setTimeout(() => {
+  //         navigate("/main");
+  //       }, 2000);
+  //   } catch (err) {
+  //     console.error(err);
+  //     const error: any = err;
+  //     toast.error(error);
+  //   }
+  // };
 
   return (
     <div
@@ -82,7 +82,7 @@ const Signup = (props: signupProp) => {
               value={phone}
               onChange={(phone) => setPhone("+" + phone)}
             />
-            <div id="recaptcha" className="mt-3"></div>
+            {/* <div id="recaptcha" className="mt-3"></div>
             {phone && (
               <button
                 onClick={sendOtp}
@@ -90,7 +90,7 @@ const Signup = (props: signupProp) => {
               >
                 Send Otp
               </button>
-            )}
+            )} */}
             {user && (
               <input
                 className="p-6 border border-gray-300 mt-7 w-80"
@@ -105,14 +105,14 @@ const Signup = (props: signupProp) => {
               className="p-6 border border-gray-300  w-80"
               placeholder="Email"
             />
-            {otp && (
+            {/* {otp && (
               <button
                 onClick={verifyOtp}
                 className="bg-orange-500 p-5 text-white font-semibold text-xs w-80 mt-10"
               >
                 Verify Otp
               </button>
-            )}
+            )} */}
             <h1 className="text-xs mt-3">
               By creating an account, I accept the Terms & Conditions & Privacy
               Policy
