@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Menu from "./Menu";
 import Restaurants from "./Restaurants";
@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import TopRated from "./TopRated";
 import Offers from "./Offers";
 import { useLocation } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Main = () => {

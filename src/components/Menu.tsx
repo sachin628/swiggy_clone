@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from "react";
+import  { useMemo, useCallback } from "react";
 import burger from "../images/burger.jpg";
 import biriyani from "../images/biriyani.jpg";
 import pizza from "../images/pizza.jpg";
@@ -14,7 +14,6 @@ type menuProp = {
 };
 
 const Menu = ({ setMenu }: menuProp) => {
-  // Memoize the menu items
   const menuItems = useMemo(
     () => [
       { src: burger, label: "American", category: "American" },

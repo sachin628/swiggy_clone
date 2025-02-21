@@ -1,0 +1,237 @@
+{
+    "location_id": "23023329",
+    "name": "Sadrasa Kitchen and Bar",
+    "latitude": "-6.899779",
+    "longitude": "107.61751",
+    "num_reviews": "1933",
+    "timezone": "Asia/Jakarta",
+    "location_string": "Bandung, West Java, Java",
+    "photo": {
+        "images": {
+            "small": {
+                "width": "150",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-l/1c/e7/29/39/breakfast-corner.jpg",
+                "height": "150"
+            },
+            "thumbnail": {
+                "width": "50",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-t/1c/e7/29/39/breakfast-corner.jpg",
+                "height": "50"
+            },
+            "original": {
+                "width": "900",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/e7/29/39/breakfast-corner.jpg",
+                "height": "600"
+            },
+            "large": {
+                "width": "900",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-o/1c/e7/29/39/breakfast-corner.jpg",
+                "height": "600"
+            },
+            "medium": {
+                "width": "550",
+                "url": "https://media-cdn.tripadvisor.com/media/photo-s/1c/e7/29/39/breakfast-corner.jpg",
+                "height": "367"
+            }
+        },
+        "is_blessed": true,
+        "uploaded_date": "2021-04-25T20:40:01-0400",
+        "caption": "Breakfast corner",
+        "id": "484911417",
+        "helpful_votes": "4",
+        "published_date": "2021-04-25T20:40:01-0400",
+        "user": {
+            "user_id": null,
+            "member_id": "0",
+            "type": "user"
+        }
+    },
+    "api_detail_url": "https://api.tripadvisor.com/api/internal/1.14/location/23023329",
+    "awards": [],
+    "doubleclick_zone": "as.indonesia.java.bandung",
+    "preferred_map_engine": "default",
+    "raw_ranking": "4.961578369140625",
+    "ranking_geo": "Bandung",
+    "ranking_geo_id": "297704",
+    "ranking_position": "1",
+    "ranking_denominator": "1400",
+    "ranking_category": "restaurant",
+    "ranking": "#1 of 1,501 Restaurants in Bandung",
+    "distance": null,
+    "distance_string": null,
+    "bearing": null,
+    "rating": "5.0",
+    "is_closed": false,
+    "open_now_text": "Open Now",
+    "is_long_closed": false,
+    "price_level": "$$ - $$$",
+    "price": "$50,000 - $300,000",
+    "description": "Who’s hungry? Come take a seat at the Sadrasa Kitchen & Bar, an innovative space designed for savoring traditional recipes with a modern twist or relishing international favorites. Take your time exploring the flavors of a quick breakfast, a leisurely business lunch, or a celebratory dinner with friends. Whatever the occasion, whatever the time of day, Sadrasa Kitchen & Bar stands at the ready.",
+    "web_url": "https://www.tripadvisor.com/Restaurant_Review-g297704-d23023329-Reviews-Sadrasa_Kitchen_and_Bar-Bandung_West_Java_Java.html",
+    "write_review": "https://www.tripadvisor.com/UserReview-g297704-d23023329-Sadrasa_Kitchen_and_Bar-Bandung_West_Java_Java.html",
+    "ancestors": [
+        {
+            "subcategory": [
+                {
+                    "key": "city",
+                    "name": "City"
+                }
+            ],
+            "name": "Bandung",
+            "abbrv": null,
+            "location_id": "297704"
+        },
+        {
+            "subcategory": [
+                {
+                    "key": "province",
+                    "name": "Province"
+                }
+            ],
+            "name": "West Java",
+            "abbrv": null,
+            "location_id": "2301792"
+        },
+        {
+            "subcategory": [
+                {
+                    "key": "region",
+                    "name": "Region"
+                }
+            ],
+            "name": "Java",
+            "abbrv": null,
+            "location_id": "294228"
+        },
+        {
+            "subcategory": [
+                {
+                    "key": "country",
+                    "name": "Country"
+                }
+            ],
+            "name": "Indonesia",
+            "abbrv": null,
+            "location_id": "294225"
+        }
+    ],
+    "category": {
+        "key": "restaurant",
+        "name": "Restaurant"
+    },
+    "subcategory": [
+        {
+            "key": "sit_down",
+            "name": "Sit down"
+        }
+    ],
+    "parent_display_name": "Bandung",
+    "is_jfy_enabled": false,
+    "nearest_metro_station": [],
+    "phone": "+62 22 86038888",
+    "website": "https://www.pullman-bandung-grandcentral.com/dining/pullman-dining/sadrasa-kitchen-bar/",
+    "email": "H9109-FB@accor.com",
+    "address_obj": {
+        "street1": "Jl. Diponegoro No. 27",
+        "street2": "Pullman Bandung Grand Central",
+        "city": "Bandung",
+        "state": null,
+        "country": "Indonesia",
+        "postalcode": "40115"
+    },
+    "address": "Jl. Diponegoro No. 27 Pullman Bandung Grand Central, Bandung 40115 Indonesia",
+    "hours": {
+        "week_ranges": [
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1320
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1320
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1320
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1320
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1320
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1350
+                }
+            ],
+            [
+                {
+                    "open_time": 390,
+                    "close_time": 1350
+                }
+            ]
+        ],
+        "timezone": "Asia/Jakarta"
+    },
+    "is_candidate_for_contact_info_suppression": false,
+    "cuisine": [
+        {
+            "key": "10648",
+            "name": "International"
+        },
+        {
+            "key": "10659",
+            "name": "Asian"
+        },
+        {
+            "key": "10690",
+            "name": "Indonesian"
+        },
+        {
+            "key": "10665",
+            "name": "Vegetarian friendly"
+        },
+        {
+            "key": "10697",
+            "name": "Vegan options"
+        },
+        {
+            "key": "10751",
+            "name": "Halal"
+        }
+    ],
+    "dietary_restrictions": [
+        {
+            "key": "10665",
+            "name": "Vegetarian friendly"
+        },
+        {
+            "key": "10697",
+            "name": "Vegan options"
+        },
+        {
+            "key": "10751",
+            "name": "Halal"
+        }
+    ],
+    "establishment_types": [
+        {
+            "key": "10591",
+            "name": "Restaurants"
+        }
+    ]
+}

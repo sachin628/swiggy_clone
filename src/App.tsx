@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Search from './components/Search'
 import Details from './components/Details'
 
+
 const App = () => {
   return (
     <Routes>

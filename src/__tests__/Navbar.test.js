@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
 import Navbar from "../components/Navbar";
-import '@testing-library/jest-dom'
+import "@testing-library/jest-dom";
 const renderWithRouter = (ui) => {
   return render(<BrowserRouter>{ui}</BrowserRouter>);
 };
@@ -9,11 +9,6 @@ const renderWithRouter = (ui) => {
 describe("Navbar Component", () => {
   test("should render the navbar with all links", () => {
     renderWithRouter(<Navbar />);
-
-    // expect(screen.getByText("Swiggy")).toBeInTheDocument();
-    // expect(screen.getByText("Home")).toBeInTheDocument();
-    // expect(screen.getByText("About")).toBeInTheDocument();
-    // expect(screen.getByText("Restaurants")).toBeInTheDocument();
     expect(screen.getByText("Search")).toBeInTheDocument();
   });
 
@@ -24,7 +19,6 @@ describe("Navbar Component", () => {
   //   expect(screen.getByRole('link', { name: "Restaurants" })).toHaveAttribute("href", "/restaurants");
   //   expect(screen.getByRole('link', { name: "Login" })).toHaveAttribute("href", "/login");
   // });
-  
 
   // test("should display the logo with correct text", () => {
   //   renderWithRouter(<Navbar />);
